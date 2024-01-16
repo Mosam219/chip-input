@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ChipInput from "./components/ChipInput";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-full  flex justify-center">
+      <div className="text-center">
+        <div className="text-3xl text-blue-800 m-7">Pick Users</div>
+        <ChipInput
+          label={""}
+          inputPlaceHolder={"Add new User"}
+          options={[
+            { name: "dsadasd1", email: "dsadasd.gmail.com" },
+            { name: "mosam2", email: "mosam.gmail.com" },
+            { name: "utsav3", email: "utsav.gmail.com" },
+            { name: "dsadasd4", email: "dsadasd.gmail.com" },
+            { name: "mosam5", email: "mosam.gmail.com" },
+            { name: "utsav6", email: "utsav.gmail.com" },
+            { name: "dsadasd7", email: "dsadasd.gmail.com" },
+            { name: "mosam8", email: "mosam.gmail.com" },
+            { name: "utsav9", email: "utsav.gmail.com" },
+          ]}
+        />
+      </div>
     </div>
   );
 }
